@@ -1,4 +1,4 @@
-package com.smalaca.productsale.command.domain.order;
+package com.smalaca.productsale.command.usecase.order;
 
 import java.util.UUID;
 

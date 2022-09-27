@@ -1,7 +1,7 @@
 package com.smalaca.productsale.api.product;
 
 
-import com.smalaca.productsale.command.domain.product.ProductAddUseCase;
+import com.smalaca.productsale.command.usecase.product.ProductAddUseCase;
 import com.smalaca.productsale.query.product.ProductDetailsDto;
 import com.smalaca.productsale.query.product.ProductQueryService;
 

@@ -1,7 +1,7 @@
 package com.smalaca.productsale.api.order;
 
 
-import com.smalaca.productsale.command.domain.order.OrderConfirmUseCase;
+import com.smalaca.productsale.command.usecase.order.OrderConfirmUseCase;
 
 import java.util.UUID;
 
