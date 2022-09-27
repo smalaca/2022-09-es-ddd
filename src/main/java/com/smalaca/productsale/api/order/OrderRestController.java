@@ -1,16 +1,18 @@
 package com.smalaca.productsale.api.order;
 
 
-import com.smalaca.productsale.command.gateway.order.OrderCommandService;
+import com.smalaca.productsale.command.domain.order.OrderConfirmUseCase;
+
+import java.util.UUID;
 
 public class OrderRestController {
-    private final OrderCommandService service;
+    private final OrderConfirmUseCase orderConfirmUseCase;
 
-    public OrderRestController(OrderCommandService service) {
-        this.service = service;
+    public OrderRestController(OrderConfirmUseCase orderConfirmUseCase) {
+        this.orderConfirmUseCase = orderConfirmUseCase;
     }
 
-    public void confirm() {
-        service.confirm();
+    public void confirm(String teleaddressData, String paymentData, UUID orderId) {
+        orderConfirmUseCase.confirm(teleaddressData, paymentData, orderId);
     }
 }
